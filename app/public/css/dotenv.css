@@ -24,14 +24,14 @@
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    border-top: 6px solid #488D6A;
+   
   }
   
   h1 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: #488D6A;
+    color: black;
   }
   
   /* Formulário */
@@ -42,7 +42,7 @@
   }
   
   fieldset {
-    border: 1px solid #e0e0e0;
+    border: none;
     border-radius: 8px;
     padding: 1.5rem;
     display: flex;
@@ -50,12 +50,6 @@
     gap: 1rem;
   }
   
-  legend {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #488D6A;
-  }
   
   label {
     font-weight: 600;
@@ -110,22 +104,14 @@
   }
   
   .salvar {
-    background: #488D6A;
+    background: rgb(14, 111, 190);
     color: white;
   }
   
   .salvar:hover {
-    background: #3a7159;
+    background: rgb(17, 128, 219);
   }
   
-  .cancelar {
-    background: #d32f2f;
-    color: white;
-  }
-  
-  .cancelar:hover {
-    background: #b71c1c;
-  }
   
   /* Responsividade */
   @media (max-width: 600px) {

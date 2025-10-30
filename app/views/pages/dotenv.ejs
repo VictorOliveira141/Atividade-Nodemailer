@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Produto</title>
+  <link rel="stylesheet" href="/css/dotenv.css">
+</head>
+<body>
+  <main>
+    <h1>CONTATO</h1>
+
+    <form>
+      <fieldset>
+        <label for="nome">Nome </label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="descricao">Email</label>
+        <input id="descricao" name="descricao" placeholder="seu@email.com" required></input>
+
+        <label for="preco">Telefone</label>
+        <input type="text" id="preco" name="preco"  placeholder="(XX) XXXXX-XXXX" required>
+
+        <label for="assunto">Assunto</label>
+        <textarea type="text" id="assunto" name="assunto" step="0.01" placeholder="Assunto da mensagem"></textarea>
+
+        <label for="mensagem">Mensagem </label>
+        <input type="text" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required>
+        
+      <section class="acoes">
+        <button type="button" class="salvar">
+          Enviar
+      </button>
+      </section>
+    </form>
+  </main>
+</body>
+</html>
