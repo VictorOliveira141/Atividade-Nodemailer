@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
 
 router.post("/dotenv", (req, res) => {
   // NODEMAILER
-  const { nome, mensagem, email, telefone } = req.body;
+  const { nome, mensagem, email, telefone, assunto } = req.body;
 
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -23,7 +23,7 @@ router.post("/dotenv", (req, res) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_USER,
-    subject: "Formulário enviado com Nodemailer",
+    subject: `${assunto} - Enviado por ${nome}`,
     html: `
         <h2>Novo envio do formulário</h2>
         <p><b>Nome:</b> ${nome}</p>
